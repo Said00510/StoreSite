@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>AradiaStore | all about 2023</title>
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <a href="/" class="logo">Tienda</a>
+        <ul class="nav">
+            <li><a onclick="scrollHome()"><i class="bi bi-house-door"></i></a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Shopping</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul class="util">
+            <li><a href="#"><i class="bi bi-search"></i></a></li>
+            <li><a href="#"><i class="bi bi-person"></i></a></li>
+            <li><a href="#"><i class="bi bi-balloon-heart"></i></a></li>
+            <li>
+                <a href="#"><i class="bi bi-bag"></i></a>
+                <span class="number">0</span>
+            </li>
+        </ul>
+        <!-- Icono Mobile -->
+        <a onclick="toggleMenu()" class="menu">
+            <i class="bi bi-list"></i>
+        </a>
+    </header>
+
+    <!-- Mobile navigation -->
+    <ul class="nav-mobile">
+        <li>
+            <a href="#" onclick="scrollToTop()">
+                <i class="bi bi-house-door"></i>
+            </a>
+        </li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">shopping</a></li>
+        <li><a href="#contact">Contacto</a></li>
+    </ul>
+
+    <!-- Hero banner section -->
+    <div id="banner" class="banner">
+    <!-- Left part -->
+        <div class="women">
+            <img src="img/women-1.jpg" alt="women">
+            <a href="#" class="switch-btn" onclick="switchBanner('left')">Mujer</a>
+            <div class="content">
+                <h1>Ladies' Fashion</h1>
+                <p>
+                    Realza tu estilo con accesorios que reflejen tu personalidad única: desde elegantes joyas hasta llamativos bolsos, añadiendo un toque de distinción a tu look.
+                </p>
+                <a href="#">Comprar <i class="bi bi-cart"></i></a>
+            </div>
+        </div>
+    <!-- Mid part -->
+        <div class="men">
+            <img src="img/men-1.jpg" alt="Men">
+            <a href="#" class="switch-btn" onclick="switchBanner('mid')">Hombre</a>
+            <div class="content">
+                <h1>Man with tase</h1>
+                <p>
+                    Fusionando elegancia atemporal con audaces toques contemporáneos para forjar un estilo masculino que inspire confianza y distinción en cada ocasión.
+                </p>
+                <a href="#">Comprar <i class="bi bi-cart"></i></a>
+            </div>
+        </div>
+    <!-- Right part -->
+        <div class="special">
+            <img src="img/special-2.jpg" alt="Special">
+            <a href="#" class="switch-btn" onclick="switchBanner('right')">Especiales</a>
+            <div class="content">
+                <h1>Special situations</h1>
+                <p>
+                    Conjuntos que reflejan la singularidad de cada género, creando memorables impresiones en eventos especiales.
+                </p>
+                <a href="#">Comprar <i class="bi bi-cart"></i></a>
+            </div>
+        </div>
+        <a href="#" class="reset" onclick="resetBanner()"><i class="bi bi-power"></i></a>
+    </div>
+    <!-- Main Section -->
+     <main class="main">
+    <!-- Call up section -->
+        <section class="call-up">
+            <div class="call-up-box">
+                <i class="bi bi-truck"></i>
+                <div>
+                    <h4>Envío gratis</h4>
+                    <P>Lorem ipsum dolor si veniam! Quasi animi consequuntur nam consequatur in nobis!</P>    
+                </div>
+            </div>
+
+            <div class="call-up-box">
+                <i class="bi bi-credit-card"></i>
+                <div>
+                    <h4>Pago seguro</h4>
+                    <P>Lorem ipsum dolor sit ametnsectetur rati consequuntur nam consequatur in nobis!</P>    
+                </div>
+            </div>
+
+            <div class="call-up-box">
+                <i class="bi bi-cash-coin"></i>
+                <div>
+                    <h4>14 días de devolución</h4>
+                    <P>Lorem ipsum dolor sit amet consecteur ratniam! Quasi animi consequuntur nam consequatur in nobis!</P>    
+                </div>
+            </div>
+        </section>
+    <!-- About section -->
+        <section id="about" class="about">
+
+            <div class="left">
+                <div class="promotion about-box">
+                    <img src="img/sneaker-4.jpg" alt="">
+                    <div class="description">
+                        <h4>Promociones y Descuentos</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, perferendis!
+                        </p>
+                        <a href="#">Comprar Ahora <i class="bi bi-box-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="style about-box">
+                    <img src="img/sunglasses-1.jpg" alt="">
+                    <div class="description">
+                        <h4>Estilos en tendencia</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, perferendis!
+                        </p>
+                        <a href="#">Comprar Ahora <i class="bi bi-box-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="collection about-box">
+                    <img src="img/collection-1.jpg" alt="">
+                    <div class="description">
+                        <h4>Colecciones de primavera</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, perferendis!
+                        </p>
+                        <a href="#">Comprar Ahora <i class="bi bi-box-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="discovery about-box">
+                    <img src="img/fashion-1.jpg" alt="">
+                    <div class="description">
+                        <h4>Descubre sobre la moda</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, perferendis!
+                        </p>
+                        <a href="#">Comprar Ahora <i class="bi bi-box-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- Products Section -->
+        <section id="products" class="products">
+            <!-- Products filter -->
+            <ul id="product-filters" class="products-filter">
+                <li data-filter="*" class="filter-active">Todos</li>
+                <li data-filter=".filter-women">Mujer</li>
+                <li data-filter=".filter-men">Hombre</li>
+                <li data-filter=".filter-special">Especiales</li>
+            </ul>
+
+            <!-- product container -->
+            <div class="product-container">
+                <!-- Insert by Js -->
+            </div>
+        </section>
+    <!-- Newsletter Singup section -->
+        <section id="newsletter" class="newsletter">
+            <div class="newsletter-box">
+                <i class="bi bi-envelope-paper-fill"></i>
+                <h4>Suscribete Ahora</h4>
+            </div>
+            <p>Descuentos temporales <span class="discount">20%</span></p>
+            <form action="">
+                <input type="email" placeholder="Email">
+                <input type="submit">
+            </form>
+        </section>
+    <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="map">
+                <iframe
+                style="border:0; width: 100%; height: 350px;"
+                loading="lazy"
+                allowfullscreen
+                frameborder="0"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyASwEFr2PnGBc2eVCl6TxBj51ht_Gbtbw0
+                  &q=Space+Needle,Seattle+WA">
+              </iframe>
+            </div>
+
+            <div class="info-wrap">
+                <div class="info">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <div class="info-details">
+                    <h4>Ubicación:</h4>
+                    <p>Calle 213 <br> Ecuador. Quito</p>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <i class="bi bi-envelope"></i>
+                    <div class="info-details">
+                    <h4>Email:</h4>
+                    <p>atlastore@gmail.com<br> atlas@outlook.com</p>
+                    </div>
+                </div>
+
+                <div class="info">
+                        <i class="bi bi-telephone"></i>
+                        <div class="info-details">
+                            <h4>Telefono</h4>
+                            <p>+593282730141<br> 2722-2411</p>
+                        </div>
+                </div>
+            </div>
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Subject" required style="width: 100%;">
+                </div>
+                <div class="form-group">
+                    <textarea name="mensaje" placeholder="Opinion" cols="30" rows="10"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit">Enviar</button>
+                </div>    
+            </form>
+        </section>
+    <!-- Footer section -->
+        <footer>
+            <ul class="sci flex">
+                <li>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="bi bi-share rose"></i></a>
+                </li>
+            </ul>
+
+            <ul class="footer-nav flex">
+                <li><a href="">Ubicación de tienda</a></li>
+                <li><a href="">Horarios</a></li>
+                <li><a href="">Terminos y Condiciones</a></li>
+            </ul>
+            <div class="ask-us flex">
+                <p>¿Preguntas?</p>
+                <a href="#" class="chat">
+                    <i class="bi bi-chat-text rose"></i>
+                </a>
+            </div>
+        </footer>
+    <!-- Back to top btn -->
+        <a onclick="scrollHome()" class="back-btn"><i class="bi bi-chevron-up"></i></a>
+    </main>
+
+    
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="JavaScript/istope.js"></script>
+    <script src="JavaScript/index.js"></script>
+</body>
+</html>
